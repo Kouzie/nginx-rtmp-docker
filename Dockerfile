@@ -37,6 +37,7 @@ RUN cd /tmp/build/nginx/${NGINX_VERSION} && \
         --http-log-path=/var/log/nginx/access.log \
         --http-client-body-temp-path=/tmp/nginx-client-body \
         --with-http_ssl_module \
+        --with-http_dav_module \
         --with-threads \
         --with-ipv6 \
         --with-http_dav_module \
