@@ -40,6 +40,7 @@ RUN cd /tmp/build/nginx/${NGINX_VERSION} && \
         --with-http_dav_module \
         --with-threads \
         --with-ipv6 \
+        --with-http_dav_module \
         --add-module=/tmp/build/nginx-rtmp-module/nginx-rtmp-module-${NGINX_RTMP_MODULE_VERSION} && \
     make -j $(getconf _NPROCESSORS_ONLN) && \
     make install && \
